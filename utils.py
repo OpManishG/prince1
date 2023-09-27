@@ -462,8 +462,8 @@ def humanbytes(size):
 async def get_shortlink(chat_id, link):
     settings = await get_settings(chat_id) #fetching settings for group
     if 'shortlink' in settings.keys():
-        URL = settings['shortlink']
-        API = settings['shortlink_api']
+        URL = settings['mdiskshortner.link']
+        API = settings['5f55281d3a0d506343e12247657c41b1f03ae980']
     else:
         URL = SHORTLINK_URL
         API = SHORTLINK_API
